@@ -1,0 +1,17 @@
+<!-- hero part -->
+
+<main>
+	<section class="hero">
+	<div class="hero-image">
+		<img src="images/boat.jpg" alt="hero-image"/>
+	</div>
+	<div class="hero-content">
+		<h1 class="display-5"> Welcome To Travel Maniaa!! </h1>
+            <h2> Visit - <span id="changetext"> </h2>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Creating Lasting Memories One Journey at a Time
+               </p>
+        <button class="btn-success"> Book Now </button>
+    </div>
+</main>
+<!-- end of hero part -->

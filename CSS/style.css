@@ -1,0 +1,372 @@
+#logoimage
+{
+	width:40px;
+	}
+.navbar {
+	background-color: #00203FFF;
+}
+.navbar-brand {
+	color: #fff;
+	 font-family: "Merriweather", serif;
+}
+.nav-link {
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+}
+.jumbotron {
+	background-color: #ADEFD1FF;
+	width:100%;
+	height:111vh;
+border-radius: 0;
+clip-path: polygon(0 0, 100% 0%, 100% 96%, 0 79%);
+}
+ 
+#hero h1, h2, p {
+	color: black;
+}
+
+#changetext {
+	color: #0b03fc;
+	font-size: 40px;
+}
+
+#changetext:after {
+	content: "";
+	animation-name: changetextanim;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+
+}
+@keyframes changetextanim
+{
+	0% {
+		content: "United States";
+		color: darkred;
+	}
+	25% {
+		content: "India";
+		color: orange;
+	}
+	45% {
+		content: "Germany";
+		color: darkcyan;
+	}
+	75% {
+		content: "France";
+		color: violet;
+	}
+	100% {
+		content: "England";
+		color: mediumvioletred;
+	}
+}
+.hero{
+	position: relative;
+	height: 600px;
+	overflow: hidden;
+}
+.hero-image img{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+.hero-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.hero-content h1{
+	font-family: "Dongle-bold";
+	font-size: 3rem;
+}
+.hero-content p{
+	font-family: "Protest-Revolution";
+	color: black;
+	font-size: 1.1rem;
+	margin-top: -1px;
+	margin-bottom: 15px;
+}
+ 
+
+.blue-first-letter {
+  color: blue; /
+}
+.service-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .card-title {
+  font-weight: bold;
+}
+
+.service-card .card-text {
+  color: #666;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Increase the scale on hover */
+}
+
+
+.about-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.about-image-container:hover .image-overlay {
+  opacity: 1;
+}
+.about-us-heading::first-letter {
+  color: #00aaff;
+  font-size: 36px;
+}
+
+.about-us-heading {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.about-image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.company-info {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.company-info p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.company-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.company-info ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.company-info ul li i {
+  margin-right: 10px;
+}
+
+.customer-img {
+  max-width: 50px; /* Adjust the size as needed */
+}
+/* Customer Reviews Section */
+.review {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review h5 {
+  color: #333;
+}
+
+.review p {
+  color: #666;
+}
+/* Customer Reviews Section end */
+/*gallery*/
+/* Gallery styles */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-caption {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.section-title {
+  color: #333;
+}
+/*gallery end*/
+
+
+
+./* Service cards background color */
+.service-card {
+  background-color: #00203FFF; /* Background color related to #00203FFF */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Service card content padding */
+.service-card .card-body {
+  padding: 20px; /* Padding inside service cards */
+}
+
+
+
+
+/* Star Ratings packages */
+/* Star Ratings */
+.star-ratings {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating {
+  width: 20px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 3px; /* Adjust spacing between stars */
+}
+
+.star-icon {
+  width: 20px; /* Adjust size of star icon */
+  height: auto;
+  fill: gold; /* Color of filled stars */
+}
+
+.star-icon-empty {
+  width: 20px; /* Adjust size of star icon */
+  height: auto;
+  fill: #ccc; /* Color of empty stars */
+}
+/*star ratings packages end*/
+
+
+/*customers think */
+.review {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.review h5 {
+  color: #00203fff;
+}
+
+.review p {
+  font-style: italic;
+  color: #6c757d;
+}
+
+/*booking form*/
+.booking-image {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form select,
+.booking-form textarea {
+  margin-bottom: 15px;
+}
+
+.booking-form button {
+  width: 100%;
+}
+
+.blue-first-letter {
+  color: #00203FFF;
+  font-size: 36px;
+}
+
