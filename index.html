@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<!-- register modal on click -->
+	<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration and Login Forms</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles for registration form */
+    .container {
+      margin-top: 50px;
+    }
+    .registration-form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .registration-form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .form-control {
+      border-radius: 20px;
+    }
+    .btn-register {
+      border-radius: 20px;
+      padding: 10px 30px;
+    }
+    /* Custom styles for login form */
+    .login-form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .btn-login {
+      border-radius: 20px;
+      padding: 10px 30px;
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+	<!-- registeration form on click end-->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<meta name="generator" content="LibreOffice 7.4.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+	<head>
+  <!-- Your existing HTML code -->
+ 
+  <style>
+    /* Style for social media icons */
+    .social-icon {
+      margin-right: 10px; /* Add space between icons */
+      color: #333; /* Set default color */
+      font-size: 20px; /* Set reduced icon size */
+      transition: color 0.3s ease; /* Smooth color transition */
+      text-decoration: none; /* Remove default underline */
+    }
+
+    /* Change color on hover */
+    .social-icon:hover {
+      color: #007bff; /* Change color to blue on hover */
+    }
+  </style>
+   <style>
+    /* Custom styles for navigation bar */
+    .navbar {
+      background-color: #00203FFF !important; /* Change navigation bar background color */
+    }
+    .navbar-nav .nav-link {
+      color: white !important; /* Change text color to white */
+    }
+    .navbar-brand {
+      color: white !important; /* Change text color of brand to white */
+    }
+  </style>
+</head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Navigation menu -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"> <img src="images/travel.png" id="logoimage" alt="TravelMania Logo">TravelMania</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Book</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Packages
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Hover Packages</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">United States</a>
+          <a class="dropdown-item" href="#">India</a>
+          <a class="dropdown-item" href="#">France</a>
+          <a class="dropdown-item" href="#">Germany</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact us</a>
+      </li>
+    </ul>
+    <button class="btn btn-success mr-2" onclick="registerNow()">Register</button>
+    <button class="btn btn-success" data-toggle="modal" data-target="#loginmodal">Login</button>
+  </div>
+</nav>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // JavaScript function to handle registration
+  function registerNow() {
+    // Replace this with the action you want to perform upon registration button click
+    alert("Redirecting to registration page...");
+    // Example: window.location.href = "registration.html";
+  }
+
+  // JavaScript function to handle login button click
+  $('#loginmodal').on('shown.bs.modal', function () {
+    $('#loginButton').trigger('focus')
+  });
+</script>
+<!-- end of nav menu --> 
+
+
+
+
+<!-- hero part -->
+
+<main>
+	<section class="hero">
+	<div class="hero-image">
+		<img src="images/boat.jpg" alt="hero-image"/>
+	</div>
+	<div class="hero-content">
+		<h1 class="display-5"> Welcome To TravelManiaa!! </h1>
+            <h2> Visit - <span id="changetext"> </h2>
+            <p>
+               Creating Lasting Memories One Journey at a Time
+               </p>
+        <button class="btn-success"> Book Now </button>
+    </div>
+</main>
+
+<div class= "modal" id="loginmodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header"> Login Form </div>
+			<div class="modal-body"> form login data </div>
+		</div>
+		</div>
+	</div>
+	<!-- end of hero part -->
+
+
+
+
+<!-- form start -->
+<br><br><br>
+<div class="container" id="rating"> 
+	<h2 class="text-center mb-4 stylish-font">
+    	<span class="blue-first-letter">B</span>ook Now
+  	</h2>
+	<div class="row">
+		<div class="container">
+  			<div class="row">
+    			<!-- Left section with brand image -->
+    			<div class="col-md-6">
+      				<div class="booking-section">
+        				<img src="images/france.jpg" alt="Skyline" class="img-fluid booking-image">
+      				</div>
+    			</div>
+    			<!-- Right section with booking form -->
+    			<div class="col-md-6">
+      				<div class="booking-section">
+        				<form class="booking-form" id="bookingForm">
+          					<div class="form-group">
+            					<label for="whereTo">Where to:</label>
+            					<select class="form-control" id="whereTo" name="whereTo">
+              						<option value="India">India</option>
+              						<option value="Germany">Germany</option>
+              						<option value="USA">USA</option>
+            					</select>
+          					</div>
+          					<div class="form-group">
+            					<label for="howMany">How Many Persons:</label>
+            					<input type="number" class="form-control" id="howMany" name="howMany">
+          					</div>
+          					<div class="form-group">
+            					<label for="startDate">Start Date:</label>
+            					<input type="date" class="form-control" id="startDate" name="startDate" min="2024-02-25">
+          					</div>
+          					<div class="form-group">
+            					<label for="endDate">End Date:</label>
+            					<input type="date" class="form-control" id="endDate" name="endDate" min="2024-02-25">
+          					</div>
+          					<div class="form-group">
+            					<label for="description">Description:</label>
+            					<textarea class="form-control" id="description" name="description" rows="4" minlength="50" maxlength="500"></textarea>
+          					</div>
+          					<button type="button" class="btn btn-primary" onclick="bookNow()">Book Now</button>
+        				</form>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+	</div>
+</div>
+
+						</div>
+			</div>
+			
+<script>
+  // JavaScript function to handle booking
+  function bookNow() {
+    var form = document.getElementById("bookingForm");
+    if (form.checkValidity()) {
+      alert("Booking successful!");
+    } else {
+      // If form is not valid, trigger form validation
+      form.reportValidity();
+    }
+  }
+</script>
+<!-- form end -->
+
+
+
+
+<!-- pakages start -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Explore Our Packages</h2>
+  <div class="row">
+    <!-- Package 1: India -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/taj.jpg" class="card-img-top" alt="India Package Image">
+        <div class="card-body">
+          <h5 class="card-title">India</h5>
+          <p class="card-text">Explore the iconic Taj Mahal, vibrant Bollywood, and indulge in unique shopping experiences.</p>
+          <p class="card-text"><strong>Price:</strong> $6999</p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <div class="text-center">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package 2: Germany -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/Germany.jpg" class="card-img-top" alt="Germany Package Image">
+        <div class="card-body">
+          <h5 class="card-title">Germany</h5>
+          <p class="card-text">Explore the rich history, cultural diversity, and breathtaking landscapes of Germany.</p>
+          <p class="card-text"><strong>Price:</strong> $5999</p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <div class="text-center">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package 3: United States -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/usa.jpg" class="card-img-top" alt="United States Package Image">
+        <div class="card-body">
+          <h5 class="card-title">United States</h5>
+          <p class="card-text">Experience the marvels of Millennium Park, Golden Gate Park, and Grand Central Terminal.</p>
+          <p class="card-text"><strong>Price:</strong> $8999</p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <div class="text-center">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package 4: England -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/england.jpg" class="card-img-top" alt="England Package Image">
+        <div class="card-body">
+          <h5 class="card-title">England</h5>
+          <p class="card-text">Discover the charm of The Cotswolds, Tower of London, and Westminster Abbey.</p>
+          <p class="card-text"><strong>Price:</strong> $7499</p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <div class="text-center">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package 5: Pakistan -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/pakistan.jpg" class="card-img-top" alt="Pakistan Package Image">
+        <div class="card-body">
+          <h5 class="card-title">Pakistan</h5>
+          <p class="card-text">Explore the majestic Badshahi Mosque, picturesque Hunza Valley, and lively Karachi.</p>
+          <p class="card-text"><strong>Price:</strong> $2999</p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <div class="text-center">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package 6: United Arab Emirates -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/dubai.jpg" class="card-img-top" alt="United Arab Emirates Package Image">
+        <div class="card-body">
+          <h5 class="card-title">United Arab Emirates</h5>
+          <p class="card-text">Experience the opulence of Sheikh Zayed Grand Mosque and the awe-inspiring Burj Khalifa.</p>
+          <p class="card-text"><strong>Price:</strong> $6899</p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <div class="text-center">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package 7: Maldives -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/maldives.jpg" class="card-img-top" alt="Maldives Package Image">
+        <div class="card-body">
+          <h5 class="card-title">Maldives</h5>
+          <p class="card-text">Relax on the pristine beaches of Alimatha Island and explore the vibrant Male Fish Market.</p>
+          <p class="card-text"><strong>Price:</strong> $6999</p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <div class="text-center">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package 8: Switzerland -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/switzerland.jpg" class="card-img-top" alt="Switzerland Package Image">
+        <div class="card-body">
+          <h5 class="card-title">Switzerland</h5>
+          <p class="card-text">Experience the breathtaking beauty of The Matterhorn and the tranquility of Lake Lucerne.</p>
+          <p class="card-text"><strong>Price:</strong> $7688</p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <div class="text-center">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Package 9: Japan -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <img src="images/japan.jpg" class="card-img-top" alt="Japan Package Image">
+        <div class="card-body">
+          <h5 class="card-title">Japan</h5>
+          <p class="card-text">Discover the beauty of Fushimi Inari-taisha Shrine and the serenity of Kiyomizu-dera Temple.</p>
+          <p class="card-text"><strong>Price:</strong> $5687</p>
+          <div class="ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+        <div class="card-footer bg-light">
+          <div class="text-center">
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- packages end -->
+
+
+
+<!-- services start -->
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Services</h2>
+  <div class="row">
+    <!-- Service 1: Affordable Hotel -->
+    <div class="col-md-4 mb-4">
+      <div class="card service-card">
+        <div class="card-body">
+          <h5 class="card-title">Affordable Hotel</h5>
+          <p class="card-text">Stay in comfortable, budget-friendly accommodations without compromising on quality. Enjoy clean rooms, friendly service, and convenient amenities.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Service 2: Food & Drinks -->
+    <div class="col-md-4 mb-4">
+      <div class="card service-card">
+        <div class="card-body">
+          <h5 class="card-title">Food & Drinks</h5>
+          <p class="card-text">Indulge in delicious local cuisine and refreshing beverages. From street food to fine dining, experience a variety of flavors and culinary delights during your trip.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Service 3: Safety Guide -->
+    <div class="col-md-4 mb-4">
+      <div class="card service-card">
+        <div class="card-body">
+          <h5 class="card-title">Safety Guide</h5>
+          <p class="card-text">Explore with confidence knowing you have expert guidance on safety measures and local regulations. Our safety guides ensure a worry-free travel experience for all our customers.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Service 4: Transportation Assistance -->
+    <div class="col-md-4 mb-4">
+      <div class="card service-card">
+        <div class="card-body">
+          <h5 class="card-title">Transportation Assistance</h5>
+          <p class="card-text">Enjoy hassle-free transportation arrangements from airport transfers to city tours. We provide reliable and comfortable transportation options tailored to your needs.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Service 5: Guided Tours -->
+    <div class="col-md-4 mb-4">
+      <div class="card service-card">
+        <div class="card-body">
+          <h5 class="card-title">Guided Tours</h5>
+          <p class="card-text">Discover hidden gems and iconic landmarks with our knowledgeable guides. Our guided tours offer insightful commentary and unforgettable experiences in every destination.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Service 6: 24/7 Customer Support -->
+    <div class="col-md-4 mb-4">
+      <div class="card service-card">
+        <div class="card-body">
+          <h5 class="card-title">24/7 Customer Support</h5>
+          <p class="card-text">Get assistance anytime, anywhere with our dedicated customer support team. Whether you need help with bookings, itinerary changes, or emergencies, we're here to ensure your trip goes smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- services end -->
+
+<!-- Gallery -->
+
+<!-- Gallery -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center mb-4 section-title">Gallery</h2>
+    </div>
+  </div>
+  <div class="row">
+    <!-- First row of gallery items -->
+    <div class="col-md-4 mb-4">
+      <div class="gallery-item">
+        <img src="images/scuba.jpg" alt="Scuba Diving" class="img-fluid">
+        <div class="image-overlay">
+          <div class="image-caption">Scuba Diving</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="gallery-item">
+        <img src="images/sky.jpg" alt="Skydiving" class="img-fluid">
+        <div class="image-overlay">
+          <div class="image-caption">Skydiving</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="gallery-item">
+        <img src="images/treak.jpg" alt="Mountain Trekking" class="img-fluid">
+        <div class="image-overlay">
+          <div class="image-caption">Mountain Trekking</div>
+        </div>
+      </div>
+    </div>
+    <!-- Second row of gallery items -->
+    <div class="col-md-4 mb-4">
+      <div class="gallery-item">
+        <img src="images/surf.jpg" alt="Beach Vacation" class="img-fluid">
+        <div class="image-overlay">
+          <div class="image-caption">Beach Vacation</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="gallery-item">
+        <img src="images/disney.jpg" alt="City Tour" class="img-fluid">
+        <div class="image-overlay">
+          <div class="image-caption">City Tour</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="gallery-item">
+        <img src="images/safari.jpg" alt="Nature Walk" class="img-fluid">
+        <div class="image-overlay">
+          <div class="image-caption">Nature Walk</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- gallery end -->
+
+    <!-- customers think start  -->
+  <div class="container mt-5">
+  <h2 class="text-center mb-4">What Customers Think About Us</h2>
+  <div class="row">
+    <!-- Review 1 -->
+    <div class="col-md-6 mb-4">
+      <div class="review">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <img src="images/marcus.jpg" alt="Marcus" class="img-fluid rounded-circle customer-img">
+          </div>
+          <div class="col">
+            <h5 class="mt-3">Marcus <span class="location">- New York</span></h5>
+            <p>"Booking my vacation through TravelMania was the best decision I made! From start to finish, their service was impeccable."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Review 2 -->
+    <div class="col-md-6 mb-4">
+      <div class="review">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <img src="images/indian.jpg" alt="Ibrahim" class="img-fluid rounded-circle customer-img">
+          </div>
+          <div class="col">
+            <h5 class="mt-3">Ibrahim <span class="location">- Mumbai</span></h5>
+            <p>"I've been using TravelMania for years now, and they never disappoint! Their wide range of packages caters to every type of traveler."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Review 3 -->
+    <div class="col-md-6 mb-4">
+      <div class="review">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <img src="images/korean.jpg" alt="David Johnson" class="img-fluid rounded-circle customer-img">
+          </div>
+          <div class="col">
+            <h5 class="mt-3">David Johnson <span class="location">- Seoul</span></h5>
+            <p>"The booking process was seamless, and the trip itself exceeded my expectations. I highly recommend TravelMania to anyone looking for a hassle-free vacation."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Review 4 -->
+    <div class="col-md-6 mb-4">
+      <div class="review">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <img src="images/hande.jpg" alt="Emily Wilson" class="img-fluid rounded-circle customer-img">
+          </div>
+          <div class="col">
+            <h5 class="mt-3">Emily Wilson <span class="location">- London</span></h5>
+            <p>"I stumbled upon TravelMania while planning my honeymoon, and I'm so glad I did! Their personalized service made our trip unforgettable."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- customers think end  -->
+
+    <!-- about us start -->
+    <div class="container mt-5">
+  <h2 class="text-center mb-4 about-us-heading">About Us</h2>
+  <div class="row">
+    <!-- Image Section -->
+    <div class="col-md-6 mb-4">
+      <div class="about-image-container">
+        <img src="images/geme.jpg" alt="Company Image" class="img-fluid">
+        <div class="image-overlay"></div>
+      </div>
+    </div>
+    <!-- Company Information Section -->
+    <div class="col-md-6 mb-4">
+      <div class="company-info">
+        <h3 class="text-primary">Welcome to TravelMania</h3>
+        <p>TravelMania, established in 2011, is a leading provider of travel and tourism services. We specialize in offering memorable travel experiences to our customers, ensuring their satisfaction and happiness.</p>
+        <p>At TravelMania, our mission is to inspire and empower people to explore the world, discover new cultures, and create unforgettable memories. With our dedicated team of experts and partners worldwide, we strive to deliver exceptional service and value to our customers.</p>
+        <p>Contact us today to start planning your next adventure!</p>
+        <ul class="contact-details">
+          <li><i class="fas fa-envelope"></i> Email: booking@travelmania.com</li>
+          <li><i class="fas fa-phone"></i> Phone: +1 123-456-7890</li>
+          <li><i class="fas fa-map-marker-alt"></i> Address: #45 TravelMania Dollars St, Bengaluru, India</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- aboust us end -->
+<!-- footer start -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2024 TravelMania. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6 text-right">
+        <a href="#" class="social-icon"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer end  -->
+<!-- register form start  -->
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="registration-form">
+        <h2>Register</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" class="form-control" id="fullname" name="fullname" required>
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="text" class="form-control" id="contact" name="contact" required>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" name="dob" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" minlength="8" required>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select class="form-control" id="gender" name="gender" required>
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-register">Register</button>
+          <div class="login-link">
+            Already have an account? <a href="#" onclick="showLoginForm()">Login here</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Email Address</label>
+            <input type="email" class="form-control" id="loginEmail" name="loginEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" class="form-control" id="loginPassword" name="loginPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-login">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="register-link">Don't have an account? <a href="register.html">Register here</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function validateForm() {
+    var form = document.getElementById("registrationForm");
+    if (form.checkValidity()) {
+      // Form is valid, you can proceed with registration
+      return true;
+    } else {
+      // Form is invalid, trigger form validation
+      form.reportValidity();
+      return false;
+    }
+  }
+
+  function showLoginForm() {
+    $('#loginModal').modal('show');
+  }
+</script>
+<!-- registeration form end -->
+
+
+  </div>
+</div>
+
+</body>
+</html>
